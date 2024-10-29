@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TestApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThem">
+
+        <activity
+            android:name=".MediKitActivity"
+            android:exported="false"
+            android:label="Medicine Kits"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LoginSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSignUpActivityForDietPlan"
+            android:exported="false" />
+        <activity
+            android:name=".LoginFromDietPlan"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".HealthTipsActivity"
+            android:exported="false"
+            android:label="Health Tips"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FoodTipsActivity"
+            android:exported="false"
+            android:label="Food Tips"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ExerciseTipsActivity"
+            android:exported="false"
+            android:label="Exercise Tips"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataUser"
+            android:exported="false" />
+        <activity
+            android:name=".DataBaseHelper"
+            android:exported="false" />
+        <activity
+            android:name=".CustomAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".CalorieCalculatorActivity"
+            android:exported="false"
+            android:label="Calorie Calculator"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BmiCalculatorActivity"
+            android:exported="false"
+            android:label="BMI Calculator"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".WelcomeSplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RoutineActivity"
+            android:label="Workout Plan"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Diet Plan"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name=".NotificationReceiver" android:exported="true" android:enabled="true" />
+    </application>
+</manifest>
